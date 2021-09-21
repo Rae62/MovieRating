@@ -4,7 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="fontawesome-free-5.1.0-web/CSS/ALL.CSS"
+      type="text/css"
+      media="screen"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <title>MovieRating</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Header -->
+    <header>
+      <input type="checkbox" id="menu-toggle" />
+      <label id="menu-button" class="menu-button" for="menu-toggle">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+      <div id="site-menu">
+        <ul id="site-menu-titles">
+          <li><p>Home</p></li>
+          <li><p>Bio</p></li>
+          <li><p>Social</p></li>
+          <li><p>Gallery</p></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html"
+          ><img src="img/movie_rating_blanc.png" alt="Logo movie rating"
+        /></a>
+      </div>
+      <form action="">
+        <input type="search" required />
+        <i class="fa fa-search"></i>
+      </form>
+    </header>
+    <!-- Fin Header -->
+
+    <script src="js.js"></script>
+  </body>
 </html>
