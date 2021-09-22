@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  overflow: hidden;
+  background-color: rgb(71, 67, 80);
 }
 a {
   text-decoration: none;
@@ -13,74 +13,15 @@ a {
 
 header {
   display: flex;
-  flex-flow: nowrap row;
   justify-content: center;
   align-items: center;
   background-color: rgb(71, 67, 80);
   height: 125px;
 }
-form {
-  position: relative;
-  left: 40%;
-  top: 20%;
-  transform: translate(-50%, -50%);
-  transition: all 1s;
-  width: 50px;
-  height: 50px;
-  background: white;
-  border-radius: 25px;
-  border: 4px solid white;
-  padding: 5px;
-}
-
-input {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 42.5px;
-  line-height: 30px;
-  outline: 0;
-  border: 0;
-  display: none;
-  font-size: 1em;
-  border-radius: 20px;
-  padding: 0 20px;
-}
-
-.fa {
-  box-sizing: border-box;
-  padding: 10px;
-  width: 42.5px;
-  height: 42.5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border-radius: 50%;
-  color: rgb(82, 78, 138);
-  text-align: center;
-  font-size: 1.2em;
-  transition: all 1s;
-}
-
-form:hover,
-form:valid {
-  width: 200px;
-  cursor: pointer;
-}
-
-form:hover input,
-form:valid input {
-  display: block;
-}
-
-form:hover .fa,
-form:valid .fa {
-  background: rgb(82, 78, 138);
-  color: white;
-}
-
 /* début nav burger */
+#site-menu {
+  z-index: 5;
+}
 #site-menu li,
 #site-menu p {
   padding: 10px;
@@ -242,3 +183,307 @@ form:valid .fa {
   }
 }
 /* fin nav burger */
+
+/* Barre de recherche */
+form {
+  position: relative;
+  left: 40%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.fa {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: rgb(82, 78, 138);
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+form:hover,
+form:valid {
+  width: 200px;
+  cursor: pointer;
+}
+
+form:hover input,
+form:valid input {
+  display: block;
+}
+
+form:hover .fa,
+form:valid .fa {
+  background: rgb(82, 78, 138);
+  color: white;
+}
+/* Fin barre de recherche */
+main {
+  display: flex;
+  flex-direction: column;
+}
+/* Carousel */
+
+.carousel-caption h2 {
+  color: black;
+}
+
+.carousel {
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-item {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.6s ease-in-out;
+  width: 100%;
+}
+
+.carousel-active:checked + .carousel-item {
+  opacity: 1;
+  pointer-events: auto;
+  position: static;
+}
+
+.carousel-item img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.carousel-controls {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 28px;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.1s ease-in-out;
+  width: 50%;
+  z-index: 2;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control.prev {
+  float: left;
+}
+
+.carousel-control.next {
+  float: right;
+}
+
+.carousel-caption {
+  bottom: 15%;
+  font-size: 120%;
+  left: 20%;
+  opacity: 0;
+  right: 20%;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.1s ease-out;
+  z-index: 2;
+}
+
+.carousel-active:checked + .carousel-item .carousel-caption {
+  transition: opacity 0.6s ease-in;
+  opacity: 1;
+}
+
+.carousel-indicators {
+  bottom: 5%;
+  left: 5%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  right: 5%;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+}
+
+.carousel-indicator {
+  border-radius: 50%;
+  cursor: pointer;
+  display: block;
+  font-size: 28px;
+  line-height: 1;
+  padding: 5px 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.1s ease-in-out;
+}
+
+.carousel-indicator:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* If you`re needing more than 3 banners, maybe you might be using another way to represent your info... ;-) */
+#carousel-1:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for="carousel-1"],
+#carousel-2:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for="carousel-2"],
+#carousel-3:checked
+  ~ .carousel-indicators
+  .carousel-indicator[for="carousel-3"] {
+  color: #007f7f;
+}
+
+@media (min-width: 768px) {
+  .carousel-indicators {
+    background: transparent;
+  }
+  .carousel-control {
+    width: 5%;
+  }
+  .carousel-controls,
+  .carousel-caption,
+  .carousel-indicators {
+    position: absolute;
+  }
+}
+/*fin du carousel  */
+
+/* typecat */
+.typecat {
+  margin-top: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* fin typecat */
+
+/* catégorie */
+.categorie {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+.cat {
+  width: 20%;
+  text-align: center;
+  flex-flow: nowrap row;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.cat:hover {
+  background-color: rgb(82, 78, 138);
+}
+
+.cat:focus {
+  background-color: rgb(82, 78, 138);
+}
+
+/* Fin catégorie */
+
+/* affiche et info */
+.conteneur {
+  width: 1000px;
+
+  margin-bottom: 20px;
+  overflow: scroll;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-left: 10px;
+}
+
+.content a {
+  color: black;
+  display: flex;
+  text-align: center;
+}
+
+.content a:hover,
+img:hover {
+  color: rgb(82, 78, 138);
+}
+
+.btncontent {
+  margin-top: 25px;
+  display: flex;
+  justify-content: end;
+}
+.btnvoirplus {
+  background-color: white;
+  border-radius: 20px;
+  width: 150px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-right: 250px;
+  margin-bottom: 25px;
+}
+.btnvoirplus a {
+  color: black;
+}
+
+.barresep {
+  width: 1200px;
+  height: 5px;
+  background-color: white;
+  border: white 1px solid;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+/* fin affiche et info */

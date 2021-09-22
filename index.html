@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,6 +17,7 @@
   <body>
     <!-- Header -->
     <header>
+      <!-- Nav barre  -->
       <input type="checkbox" id="menu-toggle" />
       <label id="menu-button" class="menu-button" for="menu-toggle">
         <div class="line"></div>
@@ -31,18 +32,268 @@
           <li><p>Gallery</p></li>
         </ul>
       </div>
+      <!-- fin nav barre -->
+      <!-- logo -->
       <div class="logo">
         <a href="index.html"
           ><img src="img/movie_rating_blanc.png" alt="Logo movie rating"
         /></a>
       </div>
+      <!-- fin logo -->
+      <!-- barre search -->
       <form action="">
         <input type="search" required />
         <i class="fa fa-search"></i>
       </form>
+      <!-- fin barre search -->
     </header>
-    <!-- Fin Header -->
+    <!-- fin Header -->
+    <!-- début carousel -->
+    <main>
+      <div id="carousel" class="carousel">
+        <input
+          class="carousel-active"
+          type="radio"
+          id="carousel-1"
+          name="carousel"
+          aria-hidden="true"
+          hidden
+          checked="checked"
+        />
+        <div class="carousel-item">
+          <div class="carousel-controls" aria-hidden="true">
+            <label for="carousel-3" class="carousel-control prev" title="Prev"
+              >«</label
+            >
+            <label for="carousel-2" class="carousel-control next" title="Next"
+              >»</label
+            >
+          </div>
+          <img src="img/DuneAffiche1920x600.jpg" alt="première affiche" />
+          <div class="carousel-caption">
+            <h2>
+              Dune <br /><small>date sortie <i>Producteur</i></small>
+            </h2>
+          </div>
+        </div>
 
+        <input
+          class="carousel-active"
+          type="radio"
+          id="carousel-2"
+          name="carousel"
+          aria-hidden="true"
+          hidden
+        />
+        <div class="carousel-item">
+          <div class="carousel-controls" aria-hidden="true">
+            <label for="carousel-1" class="carousel-control prev" title="Prev"
+              >«</label
+            >
+            <label for="carousel-3" class="carousel-control next" title="Next"
+              >»</label
+            >
+          </div>
+          <img src="img/peakyblinder-1920x600.jpg" alt="Second affiche" />
+          <div class="carousel-caption">
+            <h2>
+              Peaky Blinders <br /><small>date sortie <i>Producteur</i></small>
+            </h2>
+          </div>
+        </div>
+
+        <input
+          class="carousel-active"
+          type="radio"
+          id="carousel-3"
+          name="carousel"
+          aria-hidden="true"
+          hidden
+        />
+        <div class="carousel-item">
+          <div class="carousel-controls" aria-hidden="true">
+            <label for="carousel-2" class="carousel-control prev" title="Prev"
+              >«</label
+            >
+            <label for="carousel-1" class="carousel-control next" title="Next"
+              >»</label
+            >
+          </div>
+          <img src="img/rickandmorty-1920x600.jpg" alt="Troisième affiche" />
+          <div class="carousel-caption">
+            <h2>
+              Peaky Blinders <br /><small>date sortie <i>Producteur</i></small>
+            </h2>
+          </div>
+
+          <ol
+            class="carousel-indicators"
+            aria-label="Carousel navigation"
+            aria-hidden="true"
+          >
+            <li>
+              <label
+                for="carousel-1"
+                class="carousel-indicator"
+                title="Jump to carousel item #1"
+                >●</label
+              >
+            </li>
+            <li>
+              <label
+                for="carousel-2"
+                class="carousel-indicator"
+                title="Jump to carousel item #2"
+                >●</label
+              >
+            </li>
+            <li>
+              <label
+                for="carousel-3"
+                class="carousel-indicator"
+                title="Jump to carousel item #3"
+                >●</label
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+      <!-- fin carousel -->
+      <div class="typecat">
+        <h2>A L'AFFICHE</h2>
+      </div>
+
+      <!-- categorie -->
+      <div class="categorie">
+        <div class="cat">
+          <h3>Science-Fiction</h3>
+        </div>
+        <div class="cat">
+          <h3>Action</h3>
+        </div>
+        <div class="cat">
+          <h3>Aventure</h3>
+        </div>
+        <div class="cat">
+          <h3>Comédie</h3>
+        </div>
+        <div class="cat">
+          <h3>Drame</h3>
+        </div>
+        <div class="cat">
+          <h3>Fantastique</h3>
+        </div>
+        <div class="cat">
+          <h3>Guerre</h3>
+        </div>
+        <div class="cat">
+          <h3>Policier</h3>
+        </div>
+        <div class="cat">
+          <h3>Horreur</h3>
+        </div>
+        <div class="cat">
+          <h3>Western</h3>
+        </div>
+        <div class="cat">
+          <h3>Anime</h3>
+        </div>
+      </div>
+
+      <!-- catégorie -->
+
+      <!-- Conteneur affiche et info -->
+      <section class="conteneur">
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        <div class="content">
+          <img src="img/flash-150-x-225.jpg" alt="Affiche film">
+          <h3>Flash</h3>
+          <p>2014 , 44min ,Drame Science-Fiction et Fantastique </p>
+          <a href="#" ><img src="img/outline_favorite_white_24dp.png" alt="favorie">add to favorite</a>
+          <a href="#" ><img src="img/outline_visibility_white_24dp.png" alt="favorie">Déjà vue</a>
+          <a href="#" ><img src="img/outline_movie_white_24dp.png" alt="favorie">à voir</a>
+        </div>
+        </section>
+       
+        <div class="btncontent">
+        <div class="btnvoirplus">
+          <a href="#">Voir plus</a>
+        </div>
+      </div>
+
+      <div class="barresep"></div>
+       
+        <!--Fin Conteneur affiche et info -->
+      </div>
+  </main>
+  <!-- Début footer -->
+  <footer>
+
+  </footer>
+  <!-- Fin footer -->
     <script src="js.js"></script>
   </body>
 </html>
