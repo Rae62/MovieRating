@@ -10,6 +10,23 @@ a {
   text-decoration: none;
   color: white;
 }
+::-webkit-scrollbar {
+  height: 45px;
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #afafaf30;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
 
 header {
   display: flex;
@@ -18,6 +35,7 @@ header {
   background-color: rgb(71, 67, 80);
   height: 125px;
 }
+
 /* début nav burger */
 #site-menu {
   z-index: 5;
@@ -246,6 +264,25 @@ form:valid .fa {
   color: white;
 }
 /* Fin barre de recherche */
+
+/* language */
+.language img {
+  height: 25px;
+  width: 25px;
+}
+
+.headerdroite {
+  z-index: 1;
+  position: absolute;
+  padding-top: 20px;
+  margin-left: 1500px;
+}
+.language {
+  position: absolute;
+  padding-top: 70px;
+  margin-left: 1500px;
+}
+/* fin language */
 main {
   display: flex;
   flex-direction: column;
@@ -437,21 +474,40 @@ main {
   align-items: center;
   margin: auto;
 }
+.conteneur::-webkit-scrollbar {
+  height: 25px;
+}
+
+.conteneur::-webkit-scrollbar-track {
+  background-color: #afafaf30;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+.conteneur::-webkit-scrollbar-thumb {
+  background-color: #afafaf;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
 
 .content {
+  letter-spacing: 1px;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: start;
   margin-left: 10px;
 }
-
 .content a {
-  color: black;
+  padding-top: 10px;
   display: flex;
-  text-align: center;
+  align-items: center;
 }
-
+.content a img {
+  padding: 5px;
+}
 .content a:hover,
 img:hover {
   color: rgb(82, 78, 138);
@@ -487,3 +543,54 @@ img:hover {
   margin-bottom: 35px;
 }
 /* fin affiche et info */
+
+/* footer début */
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: aqua;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.reseaux a {
+  padding: 10px;
+}
+.reseaux p {
+  color: white;
+}
+
+.barre {
+  margin-bottom: 10px;
+  width: 200px;
+  border-bottom: white 1px solid;
+}
+
+.logofooter {
+  margin-right: 15%;
+}
+
+.logofooter img {
+  display: flex;
+}
+
+/* fin footer */

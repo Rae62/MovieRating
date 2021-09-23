@@ -1,4 +1,6 @@
-(function() {
+
+// carousel début
+(function () {
     var carousel = {
       ittem: document.getElementById('carousel'),
       interval: 5000,
@@ -38,4 +40,5 @@
       carouselTimer = setInterval(carouselPlay, carousel.interval);
     }
     carouselControls();
-  })();
+})();
+  // carousel fin
