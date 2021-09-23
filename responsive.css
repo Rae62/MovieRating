@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logo {
+  margin-right: 50px;
+}
+
+.language {
+  margin: 0px;
+}
+.headerdroite {
+  margin: 0px;
+}
+
+.categorie {
+  width: 400px;
+  overflow: scroll;
+}
+
+.conteneur {
+  overflow: scroll;
+  width: 400px;
+}
+
+.barresep {
+  width: 400px;
+}
