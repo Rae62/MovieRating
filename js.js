@@ -1,4 +1,6 @@
 
+
+searchBtn.addEventListener("click", expand);
 // carousel début
 (function () {
     var carousel = {
