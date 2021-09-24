@@ -275,12 +275,12 @@ form:valid .fa {
   z-index: 1;
   position: absolute;
   padding-top: 20px;
-  margin-left: 1500px;
+  margin-left: 1100px;
 }
 .language {
   position: absolute;
   padding-top: 70px;
-  margin-left: 1500px;
+  margin-left: 1100px;
 }
 /* fin language */
 main {
