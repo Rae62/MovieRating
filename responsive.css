@@ -19,7 +19,8 @@ header {
   overflow: scroll;
 }
 
-.conteneur {
+.conteneur,
+.conteneur2 {
   overflow: scroll;
   width: 400px;
 }
