@@ -38,6 +38,7 @@ header {
 
 /* début nav burger */
 #site-menu {
+  position: fixed;
   z-index: 5;
 }
 #site-menu li,
@@ -155,7 +156,7 @@ header {
 }
 
 #site-menu {
-  position: absolute;
+  position: fixed;
   width: 0px;
   height: 100vh;
   right: 0px;
@@ -182,7 +183,6 @@ header {
   100% {
     width: 100vw;
     height: 100vh;
-    top: 125px;
   }
 }
 @keyframes menu-closed {
@@ -274,12 +274,12 @@ form:hover .fa {
   z-index: 1;
   position: absolute;
   padding-top: 20px;
-  margin-left: 1100px;
+  margin-left: 1000px;
 }
 .language {
   position: absolute;
   padding-top: 70px;
-  margin-left: 1100px;
+  margin-left: 1000px;
 }
 /* fin language */
 main {

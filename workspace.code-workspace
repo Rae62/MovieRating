@@ -1,0 +1,18 @@
+{
+  "folders": [
+	{
+		"name": "vs code",
+		"path": "."
+	},
+	{
+		"name": "IMG",
+		"path": "..\\IMG"
+	},
+	{
+		"path": "..\\..\\..\\jurassic_shop\\css\\fontawesome-free-5.1.0-web"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "vs code"
+  }
+}

@@ -43,7 +43,7 @@
 })();
   // carousel fin
 
-  // affiche scroll
+  // affiche scroll A L'AFFICHE
 //  Base de données
 const affiche = [
   {
@@ -107,6 +107,96 @@ const affiche = [
     fav3: "img/outline_visibility_white_24dp.png",
     img: 'img/flash-150-x-225.jpg'
 },
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
 ]
 // fin base de données
 const displayFilm = () => {
@@ -130,15 +220,20 @@ const createDivElement = (affiche) => {
   const divContent = document.createElement('div');
   divContent.classList.add('content')
 
+
+
+  const a4 = document.createElement('a');
+  a4.href = "#";
   const image = document.createElement('img');
   image.src = affiche.img
   image.alt = "Affiche du film Flash"
+
 
   const titre = document.createElement('h3')
   titre.innerText = affiche.titrefilm
 
   const infoFilm = document.createElement('p')
-  infoFilm.innerText = affiche.annee, affiche.genre
+  infoFilm.innerText = affiche.annee + "          " + affiche.genre;
 
   const a = document.createElement('a');
   a.href = "#";
@@ -161,10 +256,238 @@ const createDivElement = (affiche) => {
   logoHeart3.alt = "favori";
   a3.innerText = "Add to favorite";
 
-  divContent.append(image, titre, infoFilm, a, a2, a3);
+  divContent.append(a4, titre, infoFilm, a, a2, a3);
+  a4.appendChild(image)
   a.appendChild(logoHeart)
   a2.appendChild(logoHeart2)
   a3.appendChild(logoHeart3)
+
+
+return divContent
+
+}
+// fin affiche scroll
+
+displayFilm();
+ // affiche scroll A L'AFFICHE
+//  Base de données
+const affiche2 = [
+  {
+    id: 1,
+    titrefilm: "Flash",
+      annee: '2014',
+      genre: 'science fiction et fantastique',
+      fav1: "img/outline_favorite_white_24dp.png",
+      fav2: 'img/outline_movie_white_24dp.png',
+      fav3: "img/outline_visibility_white_24dp.png",
+      img: 'img/flash-150-x-225.jpg'
+      
+  },
+  {
+      id: 2,
+      titrefilm: "Peaky Blinder",
+      annee: '2013',
+      genre: 'drame',
+      fav1: "img/outline_favorite_white_24dp.png",
+      fav2: 'img/outline_movie_white_24dp.png',
+      fav3: "img/outline_visibility_white_24dp.png",
+      img: 'img/flash-150-x-225.jpg'
+  },
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+  {
+    id: 2,
+    titrefilm: "Peaky Blinder",
+    annee: '2013',
+    genre: 'drame',
+    fav1: "img/outline_favorite_white_24dp.png",
+    fav2: 'img/outline_movie_white_24dp.png',
+    fav3: "img/outline_visibility_white_24dp.png",
+    img: 'img/flash-150-x-225.jpg'
+},
+]
+// fin base de données
+const displayFilm = () => {
+  const filmNode = affiche2.map( (affiche2) => {
+      return createDivElement(affiche2);
+  })
+  divAfficheConteneur.append(...filmNode); 
+}
+
+
+
+
+
+
+  // fonction création
+const divAfficheConteneur = document.querySelector('.conteneur2');
+
+
+
+const createDivElement = (affiche2) => {
+  const divContent = document.createElement('div');
+  divContent.classList.add('content')
+
+
+
+  const a4 = document.createElement('a');
+  a4.href = "#";
+  const image = document.createElement('img');
+  image.src = affiche.img
+  image.alt = "Affiche du film Flash"
+
+
+  const titre = document.createElement('h3')
+  titre.innerText = affiche.titrefilm
+
+  const infoFilm = document.createElement('p')
+  infoFilm.innerText = affiche.annee + "          " + affiche.genre;
+
+  const a = document.createElement('a');
+  a.href = "#";
+  const logoHeart = document.createElement('img');
+  logoHeart.src = affiche.fav1;
+  logoHeart.alt = "favori";
+  a.innerText = "Add to favorite";
+
+  const a2 = document.createElement('a');
+  a2.href = "#";
+  const logoHeart2 = document.createElement('img');
+  logoHeart2.src =affiche.fav2;
+  logoHeart2.alt = "favori";
+  a2.innerText = "Add to favorite";
+
+  const a3 = document.createElement('a');
+  a3.href = "#";
+  const logoHeart3 = document.createElement('img');
+  logoHeart3.src =affiche.fav3;
+  logoHeart3.alt = "favori";
+  a3.innerText = "Add to favorite";
+
+  divContent.append(a4, titre, infoFilm, a, a2, a3);
+  a4.appendChild(image)
+  a.appendChild(logoHeart)
+  a2.appendChild(logoHeart2)
+  a3.appendChild(logoHeart3)
+
 
 return divContent
 
