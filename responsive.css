@@ -1,24 +1,20 @@
 /* smartphone */
 @media (max-width: 500px) {
   header {
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
   }
   .logo {
-    margin-right: 50px;
+    margin-right: 20%;
   }
 
   .language {
     margin: 0px;
   }
-  .headerdroite {
-    margin: 0px;
-  }
 
   .categorie {
-    width: 400px;
+    width: 100%;
     overflow: scroll;
+    overflow-y: hidden;
   }
   .categorie::-webkit-scrollbar {
     height: 25px;
@@ -40,75 +36,170 @@
   .conteneur,
   .conteneur2 {
     overflow: scroll;
-    width: 400px;
+    width: 100%;
+    overflow-y: hidden;
   }
 
   .barresep {
-    width: 400px;
+    width: 100%;
+  }
+  .btncontent {
+    justify-content: center;
+  }
+  .btnvoirplus {
+    margin-right: 0px;
   }
 }
 
 /* ------------SMARTPHONE PORTRAIT OU TABLETTE ----------------------- 501PX A 767PX --------------------- */
 @media (min-width: 501px) and (max-width: 767px) {
-  .headerdroite {
-    z-index: 1;
-    position: absolute;
-    padding-top: 20px;
-    margin-left: 775px;
-    margin: 0px;
-  }
   .language {
-    position: absolute;
-    padding-top: 70px;
-    margin-left: 775px;
-    margin: 0px;
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
+
+  .categorie {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  .categorie::-webkit-scrollbar {
+    height: 25px;
+  }
+
+  .categorie::-webkit-scrollbar-track {
+    background-color: #afafaf30;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  .categorie::-webkit-scrollbar-thumb {
+    background-color: #afafaf;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  .conteneur,
+  .conteneur2 {
+    width: 100%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+
+  .btncontent {
+    justify-content: center;
+  }
+  .btnvoirplus {
+    margin-right: 0px;
   }
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.logo {
-  margin-right: 200px;
+
+/* ------------------ TABLETTE -------------------- 768PX A 910PX --------------------- */
+@media (min-width: 768px) and (max-width: 910px) {
+  .language {
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
+
+  .categorie {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  .categorie::-webkit-scrollbar {
+    height: 25px;
+  }
+
+  .categorie::-webkit-scrollbar-track {
+    background-color: #afafaf30;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  .categorie::-webkit-scrollbar-thumb {
+    background-color: #afafaf;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  .conteneur,
+  .conteneur2 {
+    width: 100%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+
+  .btncontent {
+    justify-content: center;
+  }
+  .btnvoirplus {
+    margin-right: 0px;
+  }
 }
 
-.categorie {
-  width: 100%;
-  overflow: scroll;
-  overflow-y: hidden;
-}
-.categorie::-webkit-scrollbar {
-  height: 25px;
-}
+/* ------------------ LAPTOP ------------------------------------ 911PX A 1199PX --------------------- */
+@media (min-width: 911px) and (max-width: 1199px) {
+  .language {
+    display: flex;
+  }
 
-.categorie::-webkit-scrollbar-track {
-  background-color: #afafaf30;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
-.categorie::-webkit-scrollbar-thumb {
-  background-color: #afafaf;
-  border-radius: 20px;
-  border: 6px solid transparent;
-  background-clip: content-box;
-}
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
 
-.conteneur,
-.conteneur2 {
-  overflow: scroll;
-  overflow-y: hidden;
-  width: 100%;
-}
+  .categorie {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+  .categorie::-webkit-scrollbar {
+    height: 25px;
+  }
 
-.barresep {
-  width: 700px;
-}
+  .categorie::-webkit-scrollbar-track {
+    background-color: #afafaf30;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  .categorie::-webkit-scrollbar-thumb {
+    background-color: #afafaf;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
 
-.btncontent {
-  justify-content: center;
-}
-.btnvoirplus {
-  margin-right: 0px;
+  .conteneur,
+  .conteneur2 {
+    width: 100%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+
+  .btncontent {
+    justify-content: center;
+  }
+  .btnvoirplus {
+    margin-right: 0px;
+  }
 }
