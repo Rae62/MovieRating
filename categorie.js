@@ -3,88 +3,34 @@
  const affiche = [
     {
      id: 1,
-        img:"img/flash cat.png.jpg" ,
+        img:"img/flash cat.png" ,
         tittle: "Flash",
         year: '2014',
         genres: 'science fiction et fantastique',
         duration: '44 minutes',
         resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
-        fav1: "img/outline_favorite_white_24dp.png.png",
-        fav2: 'img/outline_movie_white_24dp.png',
+        fav1: 'img/outline_favorite_white_24dp.png',
+        fav2:'img/outline_movie_white_24dp.png' ,
         fav3: 'img/outline_watch_later_white_24dp.png'
         
     },
     
-    {
-     id: 1,
-        img:"img/flash cat.png.jpg" ,
-        tittle: "Flash",
-        year: '2014',
-        genres: 'science fiction et fantastique',
-        duration: '44 minutes',
-        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
-        fav1: "img/outline_favorite_white_24dp.png.png",
-        fav2: 'img/outline_movie_white_24dp.png',
-        fav3: 'img/outline_watch_later_white_24dp.png'
-        
-    },
     
-    {
-     id: 1,
-        img:"img/flash cat.png.jpg" ,
-        tittle: "Flash",
-        year: '2014',
-        genres: 'science fiction et fantastique',
-        duration: '44 minutes',
-        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
-        fav1: "img/outline_favorite_white_24dp.png.png",
-        fav2: 'img/outline_movie_white_24dp.png',
-        fav3: 'img/outline_watch_later_white_24dp.png'
-        
-    },
-    
-    {
-     id: 1,
-        img:"img/flash cat.png.jpg" ,
-        tittle: "Flash",
-        year: '2014',
-        genres: 'science fiction et fantastique',
-        duration: '44 minutes',
-        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
-        fav1: "img/outline_favorite_white_24dp.png.png",
-        fav2: 'img/outline_movie_white_24dp.png',
-        fav3: 'img/outline_watch_later_white_24dp.png'
-        
-    },
-    
-    {
-     id: 1,
-        img:"img/flash cat.png.jpg" ,
-        tittle: "Flash",
-        year: '2014',
-        genres: 'science fiction et fantastique',
-        duration: '44 minutes',
-        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
-        fav1: "img/outline_favorite_white_24dp.png.png",
-        fav2: 'img/outline_movie_white_24dp.png',
-        fav3: 'img/outline_watch_later_white_24dp.png'
-        
-    },
-    
-   
   ]
   // fin base de données 1
   
 
 // point entrée 
 const divAfficheConteneur = document.querySelector('.conteneur');
+
   
 // fin point entrée 
 
+
 // reliement
 const displayaffiche = () => {
-  const afficheNode = affiche.map((affiche) => {
-    return createDivElement(affiche);
+  const afficheNode = affiche.map((affiches) => {
+    return createDivElement(affiches);
   })
   divAfficheConteneur.append(...afficheNode);
 }
@@ -93,74 +39,78 @@ const displayaffiche = () => {
 
 
 
+
 // début fonction création film
 
-const createDivElement = (affiche) => {
+const createDivElement = (affiches) => {
   const divContent = document.createElement('div');
   divContent.classList.add('content')
 
 
   const divImg = document.createElement('div');
-  divImg.classList.add('divImg')
+  divImg.classList.add('img')
  
 
-  const a = document.createAttribute('a')
+  const a = document.createElement('a');
   a.href = '#'
 
-  const img = document.createAttribute('img')
-  img.src = affiche.img
-  img.alt = `affiche du film ${affiche.tittle}`
+  const img = document.createElement('img')
+  img.src = affiches.img
+  img.alt = `affiche du film ${affiches.tittle}`
 
   const divInfoFilm = document.createElement('div')
   divInfoFilm.classList.add('infofilm')
 
-  const titre = document.createAttribute('h3')
-  titre.innerText = affiche.tittle
+  const titre = document.createElement('h3')
+  titre.innerText = affiches.tittle
 
   const ul = document.createElement('ul')
   const li1 = document.createElement('li')
-  li1.innerText = affiche.year
+  li1.innerText = affiches.year
   const li2 = document.createElement('li')
-  li2.innerText = affiche.genres
+  li2.innerText = affiches.genres
   const li3 = document.createElement('li')
-  li3.innerText = affiche.duration
+  li3.innerText = affiches.duration
 
   const divResume = document.createElement('div')
   divResume.classList.add('resume')
-  const p = document.createAttribute('p')
-  p.innerText = affiche.resume
+  const p = document.createElement('p')
+  p.innerText = affiches.resume
 
-
+  const divFav = document.createElement('div')
+  divFav.classList.add('fav')
   const a1 = document.createElement('a');
   a1.href = "#";
   const logoHeart = document.createElement('img');
-  logoHeart.src = affiche.fav1;
+  logoHeart.src = affiches.fav1;
   logoHeart.alt = "favori";
-  a1.innerText = "Add to favorite";
+  a1.innerText = "favorite";
 
   const a2 = document.createElement('a');
   a2.href = "#";
   const logoHeart2 = document.createElement('img');
-  logoHeart2.src = affiche.fav2;
+  logoHeart2.src = affiches.fav2;
   logoHeart2.alt = "favori";
-  a2.innerText = "Add to favorite";
+  a2.innerText = "Already Seen";
 
   const a3 = document.createElement('a');
   a3.href = "#";
   const logoHeart3 = document.createElement('img');
-  logoHeart3.src = affiche.fav3;
+  logoHeart3.src = affiches.fav3;
   logoHeart3.alt = "favori";
-  a3.innerText = "Add to favorite";
+  a3.innerText = "Watch later";
   
 
-  divContent.append(divImg, a, divInfoFilm, titre, ul, divResume, p, a1, a2, a3)
+  divContent.append(divImg, a, divInfoFilm,ul, titre, divResume,divFav, a1, a2, a3)
   a.appendChild(img)
-  ul.appendChild(li1, li2, li3)
+  ul.appendChild(li1,li2,li3)
+  divResume.appendChild(p)
   a1.appendChild(logoHeart)
   a2.appendChild(logoHeart2)
   a3.appendChild(logoHeart3)
+  divFav.appendChild(a1,a2,a3)
 
   return divContent
 }
-
+displayaffiche();
 // fin fonction création film
