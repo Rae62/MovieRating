@@ -1,0 +1,160 @@
+@media (max-width: 500px) {
+  .language {
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+  .conteneur {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    padding-left: 0%;
+  }
+  .infofilm {
+    display: flex;
+    flex-direction: column;
+  }
+  .infofilm h3 {
+    width: 100%;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    align-items: center;
+  }
+  .infofilm ul {
+    width: 100%;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    align-items: center;
+  }
+
+  .resume p {
+    display: flex;
+  }
+
+  .fav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8%;
+  }
+}
+
+/* ------------SMARTPHONE PORTRAIT OU TABLETTE ----------------------- 501PX A 767PX --------------------- */
+@media (min-width: 501px) and (max-width: 767px) {
+  .language {
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+  .conteneur {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    padding-left: 0%;
+  }
+  .infofilm {
+    display: flex;
+    flex-direction: column;
+  }
+  .infofilm h3 {
+    width: 100%;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    align-items: center;
+  }
+  .infofilm ul {
+    width: 100%;
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    align-items: center;
+  }
+
+  .resume p {
+    display: flex;
+  }
+
+  .fav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8%;
+  }
+}
+
+/* ------------------ TABLETTE -------------------- 768PX A 910PX --------------------- */
+@media (min-width: 768px) and (max-width: 910px) {
+  .language {
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 30%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+}
+
+/* ------------------ LAPTOP ------------------------------------ 911PX A 1199PX --------------------- */
+@media (min-width: 911px) and (max-width: 1199px) {
+  .language {
+    display: flex;
+  }
+
+  header {
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 25%;
+  }
+
+  .barresep {
+    width: 100%;
+  }
+}
