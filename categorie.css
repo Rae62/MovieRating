@@ -310,6 +310,7 @@ form:hover .fa {
 }
 .conteneur {
   display: flex;
+  flex-direction: column;
 }
 .titrecat h3 {
   display: flex;
@@ -388,6 +389,7 @@ form:hover .fa {
   margin-top: 10px;
   margin-bottom: 35px;
 }
+
 /* fin main */ /* fin main */ /* fin main */ /* fin main */ /* fin main */ /* fin main */ /* fin main */ /* fin main */ /* fin main */
 /* footer début */
 .fa-facebook {

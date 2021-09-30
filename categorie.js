@@ -14,6 +14,58 @@
         fav3: 'img/outline_watch_later_white_24dp.png'
         
     },
+    {
+     id: 1,
+        img:"img/flash cat.png" ,
+        tittle: "Flash",
+        year: '2014',
+        genres: 'science fiction et fantastique',
+        duration: '44 minutes',
+        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
+        fav1: 'img/outline_favorite_white_24dp.png',
+        fav2:'img/outline_movie_white_24dp.png' ,
+        fav3: 'img/outline_visibility_white_24dp.png'
+        
+    },
+    {
+     id: 1,
+        img:"img/flash cat.png" ,
+        tittle: "Flash",
+        year: '2014',
+        genres: 'science fiction et fantastique',
+        duration: '44 minutes',
+        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
+        fav1: 'img/outline_favorite_white_24dp.png',
+        fav2:'img/outline_movie_white_24dp.png' ,
+        fav3: 'img/outline_watch_later_white_24dp.png'
+        
+    },
+    {
+     id: 1,
+        img:"img/flash cat.png" ,
+        tittle: "Flash",
+        year: '2014',
+        genres: 'science fiction et fantastique',
+        duration: '44 minutes',
+        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
+        fav1: 'img/outline_favorite_white_24dp.png',
+        fav2:'img/outline_movie_white_24dp.png' ,
+        fav3: 'img/outline_watch_later_white_24dp.png'
+        
+    },
+    {
+     id: 1,
+        img:"img/flash cat.png" ,
+        tittle: "Flash",
+        year: '2014',
+        genres: 'science fiction et fantastique',
+        duration: '44 minutes',
+        resume: 'Jeune expert de la police scientifique de Central City, Barry Allen se retrouve doté d\'une vitesse extraordinaire après avoir été frappé par la foudre. Sous le costume de Flash, il utilise ses nouveaux pouvoirs pour combattre le crime.',
+        fav1: 'img/outline_favorite_white_24dp.png',
+        fav2:'img/outline_movie_white_24dp.png' ,
+        fav3: 'img/outline_watch_later_white_24dp.png'
+        
+    },
     
     
   ]
@@ -43,6 +95,7 @@ const displayaffiche = () => {
 // début fonction création film
 
 const createDivElement = (affiches) => {
+  const divContentSep = document.createElement('div');
   const divContent = document.createElement('div');
   divContent.classList.add('content')
 
@@ -101,16 +154,25 @@ const createDivElement = (affiches) => {
   a3.innerText = "Watch later";
   
 
-  divContent.append(divImg, a, divInfoFilm,ul, titre, divResume,divFav, a1, a2, a3)
+  const sep = document.createElement('div');
+  sep.classList.add('barresep')
+
+  
+
+  divContent.append(divImg, a, divInfoFilm, divResume,divFav,)
   a.appendChild(img)
-  ul.appendChild(li1,li2,li3)
+  divInfoFilm.append(titre ,ul)
+  ul.append(li1,li2,li3)
   divResume.appendChild(p)
+  divFav.append(a1, a2, a3)
   a1.appendChild(logoHeart)
   a2.appendChild(logoHeart2)
   a3.appendChild(logoHeart3)
-  divFav.appendChild(a1,a2,a3)
 
-  return divContent
+
+  divContentSep.append(divContent, sep)
+
+  return divContentSep
 }
 displayaffiche();
 // fin fonction création film
