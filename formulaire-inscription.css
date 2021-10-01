@@ -236,7 +236,7 @@ form {
   padding: 5px;
 }
 
-input {
+.search {
   position: absolute;
   top: 0;
   left: 0;
@@ -299,43 +299,50 @@ form:hover .fa {
   margin-left: 900px;
 }
 /* fin language */
-/* début main */
-.backgroundfilm {
-  border: black 2px solid;
-  height: 20em;
-  width: 100%;
-  background-image: url(img/flash\ 1920x411.png);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.backgroundfilm h3 {
-  color: white;
-  font-size: 2.5rem;
-}
-.backgroundfilm p {
-  color: white;
-  font-size: 1.5rem;
-}
-.backgroundfilm button {
-  font-size: 1.5rem;
-  height: 2.5rem;
-  width: 30%;
-}
-.ytbtrailer iframe {
-  margin-left: 40rem;
-  height: 15rem;
-  width: 25rem;
-}
-
-.resumer {
-  color: white;
+.formulaireconnexion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 8rem;
+  justify-content: center;
   width: 100%;
+  height: 70vh;
+}
+.formulaireconnexion input {
+  margin-bottom: 2.5rem;
+  color: black;
+  text-align: center;
+  height: 2.5rem;
+  width: 25%;
+  border-radius: 2.5rem;
+  outline: 0px;
+}
+.formulaireconnexion input::placeholder {
+  text-align: center;
+}
+.formulaireconnexion .formbtn {
+  margin-bottom: 2.5rem;
+  color: black;
+  text-align: center;
+  height: 2.5rem;
+  width: 25%;
+  border-radius: 2.5rem;
+}
+.formulaireconnexion .formbtn:hover {
+  background-color: black;
+  color: white;
+}
+.formulaireconnexion .formbtn:hover::placeholder {
+  color: white;
+}
+.inscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.inscription a:hover {
+  color: black;
 }
 .barresep {
   width: 1200px;
@@ -347,93 +354,6 @@ form:hover .fa {
   margin-top: 10px;
   margin-bottom: 35px;
 }
-
-.conteneurcreateur {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-}
-.createur1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.createur1 p {
-  margin-bottom: 20%;
-}
-.createur2 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.createur2 p {
-  margin-bottom: 20%;
-}
-.createur3 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.createur3 p {
-  margin-bottom: 20%;
-}
-.titreacteur {
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 3rem;
-  font-size: 1.5rem;
-}
-.containeracteur {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-bottom: 8rem;
-}
-
-.acteur1 img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-}
-
-.acteur1 p {
-  color: white;
-}
-.acteur2 img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-}
-.acteur2 p {
-  color: white;
-}
-.acteur3 img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-}
-.acteur3 p {
-  color: white;
-}
-.acteur4 img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-}
-.acteur4 p {
-  color: white;
-}
-.acteur5 img {
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-}
-.acteur5 p {
-  color: white;
-}
-/* fin main */
 
 /* footer début */
 .fa-facebook {
