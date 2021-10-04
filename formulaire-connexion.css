@@ -71,13 +71,6 @@ header {
   transition: all 0.5s;
 }
 
-#site-menu p:hover {
-  display: block;
-  color: #5bc1e8;
-  transition: all 0.5s;
-  font-weight: bold;
-}
-
 /* hides toggle handler */
 [type="checkbox"]:checked,
 [type="checkbox"]:not(:checked) {
@@ -166,8 +159,8 @@ header {
   animation: menu-open 2s ease both;
 }
 
-#menu-toggle:checked + #menu-button + #site-menu ul > li,
-#site-menu p {
+#menu-toggle:checked + #menu-button + #site-menu .co,
+#site-menu .inscription {
   display: block;
   animation: menu-txt-open 2.5s ease both;
 }
@@ -335,7 +328,8 @@ form:hover .fa {
   color: white;
 }
 .inscription {
-  display: flex;
+  display: none;
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -388,6 +382,9 @@ form:hover .fa {
 }
 .reseaux p {
   color: white;
+}
+.co {
+  position: relative;
 }
 
 .barre {

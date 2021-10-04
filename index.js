@@ -271,7 +271,7 @@ const createDivElement = (affiche) => {
 
 
   const a4 = document.createElement('a');
-  a4.href = "#";
+  a4.href = "produit.html";
   const image = document.createElement('img');
   image.src = affiche.img
   image.alt = "Affiche du film Flash"

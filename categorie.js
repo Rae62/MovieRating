@@ -105,7 +105,7 @@ const createDivElement = (affiches) => {
  
 
   const a = document.createElement('a');
-  a.href = '#'
+  a.href = 'produit.html'
 
   const img = document.createElement('img')
   img.src = affiches.img

@@ -12,6 +12,8 @@
     />
     <link rel="stylesheet" href="produit.css" />
     <link rel="stylesheet" href="produit-responsive.css" />
+    <link rel="stylesheet" href="formulaire-connexion.css" />
+    <link rel="stylesheet" href="formulaire-connexion-responsive.css" />
     <title>Page produit - MovieRating</title>
   </head>
   <body>
@@ -25,12 +27,33 @@
         <div class="line"></div>
       </label>
       <div id="site-menu">
-        <ul id="site-menu-titles">
-          <li><p>Home</p></li>
-          <li><p>Bio</p></li>
-          <li><p>Social</p></li>
-          <li><p>Gallery</p></li>
-        </ul>
+        <div class="barresep"></div>
+        <div class="formulaireconnexion">
+          <input
+            class="co"
+            class="form"
+            type="email"
+            id="mail"
+            name="mail"
+            placeholder="E-mail"
+          />
+          <input
+            class="co"
+            class="form"
+            type="password"
+            id="password"
+            name="password"
+            placeholder="password"
+          />
+          <button class="formbtn">Connexion</button>
+        </div>
+        <div class="inscription">
+          <a href="formulaire-inscription.html">Inscription</a>
+        </div>
+        <div class="inscription">
+          <a href="#">Mot de passe oublié ?</a>
+        </div>
+        <div class="barresep"></div>
       </div>
       <!-- fin nav barre -->
       <!-- logo -->
@@ -67,79 +90,83 @@
     <!-- fin Header -->
     <!-- fin Header -->
     <main>
-      <div class="backgroundfilm">
-        <div class="contentfilm">
-          <h3>FLASH</h3>
-          <p>44MINUTES , Drame , Science-Fiction & Fantastique</p>
-        </div>
+      <div class="conteneur">
+        <!-- <div class="content">
+          <div class="backgroundfilm">
+            <div class="contentfilm">
+              <h3>FLASH</h3>
+              <p>44MINUTES , Drame , Science-Fiction & Fantastique</p>
+            </div>
 
-        <iframe
-          src="https://www.youtube.com/embed/Yj0l7iGKh8g"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div class="conteneurresumer">
-        <div class="resumer">
-          <h3>Synopsis</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            odit fugit at modi molestias assumenda eveniet minus ab illo
-            suscipit omnis earum, sequi non odio.
-          </p>
-        </div>
-        <div class="barresep"></div>
-      </div>
+            <iframe
+              src="https://www.youtube.com/embed/Yj0l7iGKh8g"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="conteneurresumer">
+            <div class="resumer">
+              <h3>Synopsis</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis odit fugit at modi molestias assumenda eveniet minus
+                ab illo suscipit omnis earum, sequi non odio.
+              </p>
+            </div>
+            <div class="barresep"></div>
+          </div>
 
-      <div class="conteneurcreateur">
-        <div class="createur1">
-          <p>Greg Berlanti</p>
-          <h3>Créateur/Créatrice</h3>
-        </div>
-        <div class="createur2">
-          <p>Greg Berlanti</p>
-          <h3>Créateur/Créatrice</h3>
-        </div>
-        <div class="createur3">
-          <p>Greg Berlanti</p>
-          <h3>Créateur/Créatrice</h3>
-        </div>
-      </div>
+          <div class="conteneurcreateur">
+            <div class="createur1">
+              <p>Greg Berlanti</p>
+              <h3>Créateur/Créatrice</h3>
+            </div>
+            <div class="createur2">
+              <p>Greg Berlanti</p>
+              <h3>Créateur/Créatrice</h3>
+            </div>
+            <div class="createur3">
+              <p>Greg Berlanti</p>
+              <h3>Créateur/Créatrice</h3>
+            </div>
+          </div>
 
-      <div class="barresep"></div>
-      <div class="titreacteur">
-        <h3>acteur</h3>
-      </div>
+          <div class="barresep"></div>
+          <div class="titreacteur">
+            <h3>acteur</h3>
+          </div>
 
-      <div class="containeracteur">
-        <div class="acteur1">
-          <img src="img/grant gustin.jpg" alt="#" />
-          <p>Grant Gustin</p>
-          <p>Barry Allen</p>
-        </div>
-        <div class="acteur2">
-          <img src="img/grant gustin.jpg" alt="#" />
-          <p>Grant Gustin</p>
-          <p>Barry Allen</p>
-        </div>
-        <div class="acteur3">
-          <img src="img/grant gustin.jpg" alt="#" />
-          <p>Grant Gustin</p>
-          <p>Barry Allen</p>
-        </div>
+          <div class="containeracteur">
+            <div class="acteur1">
+              <img src="img/grant gustin.jpg" alt="#" />
+              <p>Grant Gustin</p>
+              <p>Barry Allen</p>
+            </div>
+            <div class="acteur2">
+              <img src="img/grant gustin.jpg" alt="#" />
+              <p>Grant Gustin</p>
+              <p>Barry Allen</p>
+            </div>
+            <div class="acteur3">
+              <img src="img/grant gustin.jpg" alt="#" />
+              <p>Grant Gustin</p>
+              <p>Barry Allen</p>
+            </div>
 
-        <div class="acteur4">
-          <img src="img/grant gustin.jpg" alt="#" />
-          <p>Grant Gustin</p>
-          <p>Barry Allen</p>
-        </div>
-        <div class="acteur5">
-          <img src="img/grant gustin.jpg" alt="#" />
-          <p>Grant Gustin</p>
-          <p>Barry Allen</p>
-        </div>
+            <div class="acteur4">
+              <img src="img/grant gustin.jpg" alt="#" />
+              <p>Grant Gustin</p>
+              <p>Barry Allen</p>
+            </div>
+            <div class="acteur5">
+              <img src="img/grant gustin.jpg" alt="#" />
+              <p>Grant Gustin</p>
+              <p>Barry Allen</p>
+            </div>
+          </div>
+        </div> -->
       </div>
     </main>
     <!-- Début footer -->

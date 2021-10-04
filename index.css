@@ -166,7 +166,7 @@ header {
   animation: menu-open 2s ease both;
 }
 
-#menu-toggle:checked + #menu-button + #site-menu ul > li,
+#menu-toggle:checked + #menu-button + #site-menu .co,
 #site-menu p {
   display: block;
   animation: menu-txt-open 2.5s ease both;
