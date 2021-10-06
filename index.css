@@ -475,6 +475,21 @@ main {
 .cat:focus {
   background-color: rgb(82, 78, 138);
 }
+.pfav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.buttonfav {
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}
+.fantome {
+  display: flex;
+}
 
 /* Fin catégorie */
 
@@ -574,6 +589,7 @@ img:hover {
   margin-top: 10px;
   margin-bottom: 35px;
 }
+
 /* fin affiche et info */
 
 /* footer début */
