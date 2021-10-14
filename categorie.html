@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="categorie-responsive.css" />
     <link rel="stylesheet" href="formulaire-connexion.css" />
     <link rel="stylesheet" href="formulaire-connexion-responsive.css" />
+    <link rel="stylesheet" href="css.css" />
     <title>Page catégorie - MovieRating</title>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -67,8 +69,12 @@
       <!-- barre search -->
 
       <div class="headerdroite">
-        <form action="">
-          <input type="search" placeholder="Search here ..." />
+        <form action="" class="formSearch">
+          <input
+            class="searchbar"
+            type="search"
+            placeholder="Search here ..."
+          />
           <i class="fa fa-search"></i>
         </form>
       </div>
@@ -89,6 +95,7 @@
     <!-- fin Header -->
     <!-- fin Header -->
     <!-- fin Header -->
+    <div class="test"></div>
     <main>
       <div class="titrecat">
         <h3>A L'AFFICHE</h3>
@@ -265,5 +272,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="categorie.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>

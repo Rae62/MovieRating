@@ -330,6 +330,10 @@ form:hover .fa {
   padding-left: 1.5%;
 }
 
+.fantome {
+  display: flex;
+}
+
 .resume {
   margin-right: 2.5%;
 }
@@ -358,6 +362,23 @@ form:hover .fa {
   color: white;
 
   display: flex;
+}
+.pfav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.buttonfav {
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.pfav {
+  color: white;
 }
 
 .fav {

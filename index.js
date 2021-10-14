@@ -255,7 +255,7 @@
 
 
 let affiche = [];
-let affiche2=[]
+let affiche2 = [];
 
 
 
@@ -361,7 +361,8 @@ buttonfav.classList.add('buttonfav')
 
 
 // bouton fav on/off
-let condition = false;
+  let condition = false;
+
 
 buttonfav.addEventListener('click' , () => {
 condition = !condition;
@@ -425,44 +426,6 @@ return divContent
 
 
 
-// barre de recherche fonctionnelle via API // barre de recherche fonctionnelle via API // barre de recherche fonctionnelle via API
-const displayMoviesearch = () => {
-    let movies = fetch('https://api.themoviedb.org/3/search/company?api_key=37cf1254c9ee3ea79476a11690639c08');
-movies.then( async response => {
-    try {
-        let movieContentApi = await response.json();
-        affiche = movieContentApi.results
-        console.log(affiche);
-            const movieNode = affiche.map( (movies) => {
-        return createMovieElement(movies)
-    })
-    duMoment.append(...movieNode);
-    } catch (e){
-        console.log(e);
-    }
-})
-.catch(err => console.log(err));
-}
-
-
-
-
-
-
-
-
-let searchBar = document.querySelector(".searchbar");
-searchBar.addEventListener("keyup", e => {
-const searchString = e.target.value.toLowerCase();
-const filteredCharacters = affiche.filter(movies => {
-  return (
-    affiche.title.includes(searchString)
-  );
-});
-displayMovie3(filteredCharacters);
-});
-
-// Fin barre de recherche fonction via API // Fin barre de recherche fonction via API // Fin barre de recherche fonction via API
 
  
 
