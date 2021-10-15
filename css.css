@@ -44,7 +44,13 @@ a {
   border: 6px solid transparent;
   background-clip: content-box;
 }
-
+.buttonsearch {
+  margin-left: 1rem;
+  background-color: rgba(255, 255, 255, 0);
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}
 header {
   display: flex;
   justify-content: center;
@@ -345,7 +351,7 @@ img:hover {
   padding: 2%;
 }
 
-main {
+.mainresearch {
   display: flex;
   flex-direction: row;
   align-items: center;
